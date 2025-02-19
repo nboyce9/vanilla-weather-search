@@ -9,6 +9,7 @@ body{
     padding: 40px;
     width: 80%;
     background-color: #6b9071;
+    /* background-color: #aec3b0; */
     border-radius: 10px;
 
 }
@@ -22,6 +23,7 @@ body{
 
 }
 #submit{
+    margin: 0 auto;
     background-color: #0f2a1d;
     color:#e3eed4 ;
     padding: 10px;
@@ -32,5 +34,34 @@ body{
 }
 #city-name{
     font-weight: bold;
+    color: #0f2a1d;
+}
+#description{
+    color: #e3eed4;
+    font-weight:bold;
+}
+strong{
+    color: #0f2a1d;
+}
+ .weather-container{
+    display: flex;
+    justify-content: space-between;
+ }
+.weather-details{
+    display:block;
+}
+.temperature-details{
+    display:flex;
+    line-height: 75px;
+    justify-content:baseline;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0f2a1d;
+}
+#footer{
+    font-family: gevana;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
     color: #0f2a1d;
 }
