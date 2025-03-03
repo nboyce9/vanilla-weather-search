@@ -59,6 +59,24 @@ strong{
     font-weight: bold;
     color: #0f2a1d;
 }
+.forecast-days{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #0f2a1d;
+}
+.forecast-temperature{
+    display: flex;
+    text-align: left;
+    margin-top: 10px; 
+    font-size: 20px;
+    color: #0f2a1d;
+}
+.forecast-min{
+    opacity: 0.8;
+   padding: 0 10px;
+}
 #footer{
     font-family: gevana;
     font-size: 12px;

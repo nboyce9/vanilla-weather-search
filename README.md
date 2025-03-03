@@ -45,6 +45,7 @@ To make the app work, you need an API key from SheCodes Weather API.
     let apiKey = "YOUR_API_KEY"; // Replace with your actual API key
 
 3.Screenshots
+
 ![Screenshot 2025-02-20 at 05-09-28 Weather App](https://github.com/user-attachments/assets/a416d6ea-5925-4448-91b4-b2a832fc26b5)
 ![Screenshot 2025-02-20 at 05-09-58 Weather App](https://github.com/user-attachments/assets/0537cc05-9e5f-47d1-ab6f-00552982a39a)
 
