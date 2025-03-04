@@ -2,12 +2,13 @@ body{
     background-color: #e3eed4;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 200px;
+    padding: 200px 15px;
 }
 .container{
     margin: 0 auto;
     padding: 40px;
-    width: 60%;
+    width: 80%;
+    max-width: 100%;
     background-color: #6b9071;
     /* background-color: #aec3b0; */
     border-radius: 10px;
@@ -59,18 +60,35 @@ strong{
     font-weight: bold;
     color: #0f2a1d;
 }
-.forecast-days{
+.weather-forecast{
     display: flex;
     justify-content: space-around;
+    /* margin-top: 20px;
+    font-size: 20px;
+    color: #0f2a1d; */
+}
+
+.forecast-days{
+    display: block;
+    /* text-align: center; */
+    /* justify-content: center;
+    justify-items: center; */
     margin-top: 20px;
     font-size: 20px;
     color: #0f2a1d;
+}
+
+.forecast-icon{
+    /* font-size: 10px;
+    /* justify-content: right; */
+    display: block;
+    margin: 0 auto; 
 }
 .forecast-temperature{
     display: flex;
     text-align: left;
     margin-top: 10px; 
-    font-size: 20px;
+    font-size: 16px;
     color: #0f2a1d;
 }
 .forecast-min{
