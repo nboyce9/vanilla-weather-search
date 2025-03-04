@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let hours = date.getHours();
         let minutes = date.getMinutes();
 
-        let time = document.querySelector("#time");
+        let time = document.querySelector(".time");
         if (minutes < 10){
             minutes = `0${minutes}`;
         }
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function searchCity(city){
         // Get the data from the API
-        let apiKey = "8827643caa23f3fa4e0oc6dt3bdbc467";
+        let apiKey = "8827643caa23f3fa4e0oc6dt3bdbb467";
         let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
         axios.get(apiUrl).then(displayTemperature);
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function getForecast(city){
         //Get forecast data from the API
-        let apiKey = "8827643caa23f3fa4e0oc6dt3bdbc467";
+        let apiKey = "8827643caa23f3fa4e0oc6dt3bdbb467";
         let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
         axios.get(apiUrl).then(displayForecast);
     }
@@ -68,27 +68,32 @@ document.addEventListener("DOMContentLoaded", function() {
         let formInput = document.querySelector("#input-form").value;
         searchCity(formInput);
     }
+    function getForecastDay(timeStamp){
+        let date = new Date(timeStamp*1000);
+        
+        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        let day = days[date.getDay()];
+        return day;
+    }
 
     function displayForecast(response){
-        dataResponse = response.data;
-        console.log(dataResponse);
 
         let forecastString = "";
 
-        //let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-        //let forecastIconElement = `<img src="${dataResponse.daily.condition.icon_url}" class="weather-icon"/>`;
-
         response.data.daily.forEach(function(day, index){
             if (index <= 5){
+                let forecastDay = getForecastDay(day.time);
                 let forecastIconElement = `<img src="${day.condition.icon_url}" class="weather-icon"/>`;
+                let maxTemperature = Math.round(day.temperature.maximum);
+                let minTemperature = Math.round(day.temperature.minimum);
                 
+    
                 forecastString += `<div class="forecast-days">
-                <div class="forecast-day">Tue</div>
+                <div class="forecast-day">${forecastDay}</div>
                     <div class="forecast-icon">${forecastIconElement}</div>
                     <div class="forecast-temperature">
-                        <div class="forecast-max"><strong>${Math.round(day.temperature.maximum)}°C </strong></div> 
-                        <div class="forecast-min"> ${Math.round(day.temperature.minimum)}°C</div>
+                        <div class="forecast-max"><strong>${maxTemperature}°C </strong></div> 
+                        <div class="forecast-min"> ${minTemperature}°C</div>
                     </div>
                     </div>`;
             }

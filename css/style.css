@@ -1,104 +1,156 @@
-body{
-    background-color: #e3eed4;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 200px 15px;
+
+body {
+  background-image: url('/images/background1.jpeg');
+  background-size: cover; 
+  padding: 200px 15px;
+  background-position: center center; 
+  background-repeat: no-repeat;
 }
 .container{
     margin: 0 auto;
     padding: 40px;
     width: 80%;
     max-width: 100%;
-    background-color: #6b9071;
-    /* background-color: #aec3b0; */
     border-radius: 10px;
+    border-color: #0f2a1d;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    opacity: 0.9;
 
 }
 #input-form{
     margin: 0 auto;
     padding: 10px;
     width: 80%;
-    background-color: #e3eed4;
     border-radius: 6px;
-    border: none;
+    border:#0f2a1d;
+    opacity:0.4;
 
 }
 #submit{
     margin: 0 auto;
-    background-color: #0f2a1d;
-    color:#e3eed4 ;
+    background-color:#111211 ;
+    color:#a7daf2;
     padding: 10px;
     border-radius: 6px;
     font-weight: bold;
-    border: none;
+    border: #111211;
     cursor: pointer;
-}
-#city-name{
-    font-weight: bold;
-    color: #0f2a1d;
-}
-#description{
-    color: #e3eed4;
-    font-weight:bold;
-}
-strong{
-    color: #0f2a1d;
-}
- .weather-container{
-    display: flex;
-    justify-content: space-between;
- }
-.weather-details{
-    display:block;
+    opacity:0.4;
 }
 
-.temperature-details{
-    display:flex;
-    justify-content: right;
-    line-height: 100px;
-    font-size: 50px;
-    font-weight: bold;
-    color: #0f2a1d;
-}
-.weather-forecast{
+.weather-container {
+    margin-top: 10px;
     display: flex;
-    justify-content: space-around;
-    /* margin-top: 20px;
-    font-size: 20px;
-    color: #0f2a1d; */
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  #city-name {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .time {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #555;
+  }
+  .weather-description{
+    font-size: 14px;
+  
+  }
+  
+  #weather-description {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .temperature{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  
+  }
+  
+  .temperature-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15px;  
+  } 
+  
+  #icon {
+    font-size: 48px;
+  }
+  
+  #temp {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  #unit {
+    font-size: 40px;
+  }
+  
+  .humidity,
+  .wind-speed {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  
+  .humidity strong,
+  .wind-speed strong {
+    font-weight: bold;
+  }
+
+
+.weather-forecast{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 10px;
+  padding: 40px;
 }
 
 .forecast-days{
-    display: block;
-    /* text-align: center; */
-    /* justify-content: center;
-    justify-items: center; */
-    margin-top: 20px;
-    font-size: 20px;
-    color: #0f2a1d;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #0f2a1d;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .forecast-icon{
-    /* font-size: 10px;
-    /* justify-content: right; */
-    display: block;
-    margin: 0 auto; 
+  font-size: 10px;
+  justify-content: right;
+  display: block;
+  margin: 0 auto; 
 }
 .forecast-temperature{
-    display: flex;
-    text-align: left;
-    margin-top: 10px; 
-    font-size: 16px;
-    color: #0f2a1d;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: #0f2a1d;
 }
 .forecast-min{
-    opacity: 0.8;
-   padding: 0 10px;
+  opacity: 0.8;
+ padding: 0 10px;
 }
 #footer{
-    font-family: gevana;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 20px;
-    color: #0f2a1d;
+  font-family: gevana;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  color: #0f2a1d;
 }
+  

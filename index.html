@@ -16,22 +16,25 @@
             <input id="submit" type="submit" value="Search"/>
         </form>
         </header>
-        <main>
-            <div class="weather-container">
-                
-            <div class="weather-details">
-            <h1 id="city-name"></h1>
-                <p id="description"> <span id="time"></span>, <span id="weather-description"></span>
-                    <br>
-                    Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
-                </p>
-            </div>
 
-            <div class="temperature-details"> 
-                <div id="icon"></div>
-                <div id="temp"></div>
-                <div id="unit">°C</div>
-            </div> 
+        <main>
+            <div class="weather-container">      
+        
+                <div class="city-info">
+                    <h1 id="city-name"></h1>
+                    <div class="time"></div>
+                </div>
+
+                <div class="temperature-details"> 
+                    <div class="weather-description">Description: <strong id="weather-description"></strong></div>
+                    <div class="temperature">
+                        <div id="icon"></div>
+                        <div id="temp"></div>
+                        <div id="unit">°C</div>  
+                    </div> 
+                    <div class="humidity">Humidity: <strong id="humidity"></strong></div>
+                    <div class="wind-speed">Wind: <strong id="wind-speed"></strong></div>
+                </div> 
             </div>
 
             <div class="weather-forecast"></div>
