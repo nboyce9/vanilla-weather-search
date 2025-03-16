@@ -1,4 +1,4 @@
-![Screenshot 2025-03-16 at 17-39-37 Weather App](https://github.com/user-attachments/assets/586adc43-173d-4ce1-b3af-b6c61e5b6dc3)# Weather App
+# Weather App
 
 This is a simple weather application built with HTML, CSS, and JavaScript. The app allows users to search for weather information for any city and displays the current temperature, weather description, humidity, wind speed, and the time of day.
 
