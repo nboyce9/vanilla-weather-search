@@ -1,4 +1,4 @@
-# Weather App
+![Screenshot 2025-03-16 at 17-39-37 Weather App](https://github.com/user-attachments/assets/586adc43-173d-4ce1-b3af-b6c61e5b6dc3)# Weather App
 
 This is a simple weather application built with HTML, CSS, and JavaScript. The app allows users to search for weather information for any city and displays the current temperature, weather description, humidity, wind speed, and the time of day.
 
@@ -46,9 +46,11 @@ To make the app work, you need an API key from SheCodes Weather API.
 
 3.Screenshots
 
-![Screenshot 2025-02-20 at 05-09-28 Weather App](https://github.com/user-attachments/assets/a416d6ea-5925-4448-91b4-b2a832fc26b5)
-![Screenshot 2025-02-20 at 05-09-58 Weather App](https://github.com/user-attachments/assets/0537cc05-9e5f-47d1-ab6f-00552982a39a)
+    
+![Screenshot 2025-03-16 at 17-36-15 Weather App](https://github.com/user-attachments/assets/9e20baae-1017-46af-b45a-5d50cde78a11)
 
+
+![Screenshot 2025-03-16 at 17-39-37 Weather App](https://github.com/user-attachments/assets/f6bd21a7-7a1a-4df8-a8f4-b48f38c0aa75)
 
 
 4.Contact
